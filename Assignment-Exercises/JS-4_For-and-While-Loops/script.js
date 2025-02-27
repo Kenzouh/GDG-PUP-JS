@@ -7,14 +7,27 @@ for (let i = 1; i <= 10; i++) {
 
 // Using a while loop to print a list of hobbies
 let hobbies = [
-  "Reading", // Example hobby
-  "Writing", // Example hobby
-  // Add more hobbies
+  "Japanese",
+  "Chinese",
+  "Korean",
+  "Foreign Languages",
+  "Roblox",
+  "GitHub",
+  "Hosting",
+  "School Clubs",
+  "Attending Workshops",
+  "Arcade"
 ];
 
-let index = 0;
-while (index < hobbies.length) {
-  // Log each hobby and see if it works in the console
+for(let i = 1; i<= hobbies.length ; i++){
 
-  index++;
+  let index = 0; // Resets for while loop
+
+  while (index < hobbies.length) {
+    
+    // Printing the hobbies in-order with for loop numbering.
+    console.log(`Hobby ${i}: ${hobbies[i - 1]}`);
+
+    index++;
+  }
 }
